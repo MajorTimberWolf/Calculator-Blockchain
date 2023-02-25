@@ -12,9 +12,6 @@ The Aim was to create a Calculator using the languages; HTML+CSS+JS
 Press the buttons present on the calculator to perform arithmetic functions
 ```
 
-<div align="center">
+![2](https://user-images.githubusercontent.com/110900686/221369005-a32bd82a-6a1b-4a26-83a0-adde917d7c83.jpeg)
+![3](https://user-images.githubusercontent.com/110900686/221369083-bab6a06b-6509-4d5f-bce0-3f865f553b1f.jpeg)
 
-<h1 align="center">
-  ![2](https://user-images.githubusercontent.com/110900686/221369005-a32bd82a-6a1b-4a26-83a0-adde917d7c83.jpeg)
-  ![3](https://user-images.githubusercontent.com/110900686/221369083-bab6a06b-6509-4d5f-bce0-3f865f553b1f.jpeg)
-</h1>
