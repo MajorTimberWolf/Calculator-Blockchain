@@ -10,6 +10,8 @@ The Aim was to create a Calculator using the languages; HTML+CSS+JS
 
 ```
 Press the buttons present on the calculator to perform arithmetic functions
+^ does the exponent function
+% does the modulus function
 ```
 
 ![2](https://user-images.githubusercontent.com/110900686/221369005-a32bd82a-6a1b-4a26-83a0-adde917d7c83.jpeg)
