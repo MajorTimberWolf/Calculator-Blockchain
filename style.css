@@ -1,0 +1,222 @@
+html{
+    box-sizing: border-box;
+    height: auto;
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: auto;
+    padding: 0;
+}
+
+/*light theme*/
+
+body{
+    align-items: center;
+    background: radial-gradient(circle at center, #3CAEA3, #7157D9);
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+/* Went for a glassmorphic design, used w3schools and chatgpt as a guidance resource*/
+
+.wrapper{
+    backdrop-filter: blur(8.25px);
+    -webkit-backdrop-filter: blur(8.25px);
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(82, 82, 82, 0.09);
+    color: #242424;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.62);
+    border: 2px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 600px;
+    height: 640px;
+    padding: 20px 35px;
+}
+
+.screen{
+    backdrop-filter: blur(8.25px);
+    -webkit-backdrop-filter: blur(8.25px);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(255, 255, 255, 0.009);
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(82, 82, 82, 0.09);
+    color: #242424;
+    font-size: 45px;
+    overflow: auto;
+    padding: 30px;
+    text-align: right;
+    width: 326px;
+
+}
+
+.calculator-buttons-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calculator-buttons{
+    backdrop-filter: blur(8.25px);
+    -webkit-backdrop-filter: blur(8.25px);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(255, 255, 255, 0.009);
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(82, 82, 82, 0.09);
+    color: #242424;
+    flex-basis: 15%;
+    font-family: inherit;
+    font-size: 32px;
+    height: 65px;
+}
+
+.calculator-buttons-triple{
+    backdrop-filter: blur(8.25px);
+    -webkit-backdrop-filter: blur(8.25px);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(255, 255, 255, 0.009);
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(82, 82, 82, 0.09);
+    color: #242424;
+    flex-basis: 15%;
+    font-family: inherit;
+    font-size: 32px;
+    height: 65px;
+}
+
+.calculator-buttons-equals{
+    backdrop-filter: blur(8.25px);
+    -webkit-backdrop-filter: blur(8.25px);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(255, 255, 255, 0.009);
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(82, 82, 82, 0.09);
+    color: #242424;
+    flex-basis: 15%;
+    font-family: inherit;
+    font-size: 32px;
+    height: 65px;
+}
+
+
+.calculator-buttons:last-child{
+    backdrop-filter: blur(8.25px);
+    -webkit-backdrop-filter: blur(8.25px);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(255, 255, 255, 0.009);
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(82, 82, 82, 0.09);
+    color: #ffffff;
+    background: rgba(212, 131, 8, 0.76);
+}
+.calculator-buttons-equals:last-child{
+    backdrop-filter: blur(8.25px);
+    -webkit-backdrop-filter: blur(8.25px);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(255, 255, 255, 0.009);
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(82, 82, 82, 0.09);
+    color: #ffffff;
+    background: rgba(51, 226, 7, 0.76);
+}
+
+
+.calculator-buttons:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+.calculator-buttons:hover{
+    background-color: inherit;
+}
+
+.calculator-buttons-triple:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+.calculator-buttons-equals:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+.calculator-buttons:active{
+    background-color: #10c9bf;
+}
+
+.calculator-buttons-triple:active{
+    background-color: #10c9bf;
+}
+
+
+/*[WIP]*/
+/*.theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+     position: absolute;
+     cursor: pointer;
+     top: -2px; 
+     left:-2px; 
+     right:-2px; 
+     bottom:-2px; 
+     background-color:#ccc; 
+     -webkit-transition:.4s; 
+     transition:.4s
+  }
+  
+  .slider:before {
+      position:absolute; 
+      content:""; 
+      height:26px; 
+      width:26px; 
+      left:4px; 
+      bottom:4px;  
+      background-color:white;  
+      -webkit-transition:.4s ;  
+       transition:.4s
+  }
+  
+  input:checked + .slider {
+       background-color:#000000
+  }
+  
+  input:focus + .slider {
+       box-shadow: 0 5px 20px rgba(82, 82, 82, 0.09);
+         
+  }
+  
+  input:checked + .slider:before {
+       -webkit-transform:
+         translateX(26px);  
+       -ms-transform:
+         translateX(26px);  
+       transform:
+         translateX(26px);  
+        background-color:#242424 !important
+  }
+*/
+/*background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(255, 255, 255, 0.009);*/
